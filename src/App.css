@@ -1,0 +1,48 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding:0;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  overflow-y: hidden;
+}
+
+:root{
+  /* === COLOURS === */
+
+  --first-colour: #e60012;
+  --second-colour: #0b2b6b;
+  --third-colour:  #d6f0fa;
+  --fourth-colour: #efefef;
+  --fifth-colour:  #ffffff;
+  --sixth-colour:  #434242;
+
+
+  /* === FONT AND TYPOGRAPHY === */
+  --body-font: ;
+}
+
+body{
+  position: relative;
+}
+
+header{
+  position: relative;
+}
+
+nav{
+ position: relative;
+}
+
+.flex.flex-1.items-center{
+  justify-content: space-between;
+}
+
+
+.one{
+  height: 646px;
+  background-color: var(--third-colour);
+  width: 100%;
+}
+
