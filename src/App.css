@@ -1,48 +1,929 @@
+@import url("https://use.typekit.net/tce7avm.css");
+
+
 #root {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  padding:0;
+  padding: 0;
   text-align: center;
   text-rendering: optimizeLegibility;
-  overflow-y: hidden;
+  font-family:"museo-sans";
+  overflow-x: hidden;
+
+
+
 }
 
-:root{
+:root {
   /* === COLOURS === */
 
   --first-colour: #e60012;
   --second-colour: #0b2b6b;
-  --third-colour:  #d6f0fa;
+  --third-colour: #d6f0fa;
   --fourth-colour: #efefef;
-  --fifth-colour:  #ffffff;
-  --sixth-colour:  #434242;
+  --fifth-colour: #ffffff;
+  --sixth-colour: #434242;
 
 
   /* === FONT AND TYPOGRAPHY === */
   --body-font: ;
 }
 
-body{
+body {
   position: relative;
 }
 
-header{
+header {
   position: relative;
 }
 
-nav{
- position: relative;
+nav {
+  position: relative;
+
 }
 
-.flex.flex-1.items-center{
+.flex.flex-1.items-center {
   justify-content: space-between;
 }
 
+.hidden{
+  justify-content: center;
+  align-items: center;
 
-.one{
+}
+
+.logoImg{
+  left: 0;
+  
+}
+
+.search{
+  display: flex;
+}
+
+.searchbar{
+  margin:0;
+  width: 60%;
+}
+
+.searchbar input{
+  padding-left: 35%;
+}
+
+.searchButton{
+  background-color: var(--first-colour);
+}
+
+.nav1{
+  padding:0;
+  margin: 0;
+  width: 100%;
+  border-bottom:1px solid #e1e1e1;
+}
+
+.ThirdNav{
+  background-color: #f5f5f5;
+  padding: 8px;
+}
+
+.ThirdNav p{
+  
+}
+
+
+.one {
   height: 646px;
   background-color: var(--third-colour);
   width: 100%;
 }
+
+.logoArea {
+  background: var(--first-colour);
+  padding: 20px;
+}
+
+
+
+.navoneIcons{
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+#icon-nav{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-button{
+  color: #e60012;
+  border: none;
+  border-bottom: 4px solid red;
+  border-radius: 0;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+.menu-button1{
+  border: none;
+  color:#434242;
+  outline: none;
+}
+
+.menu-button1:hover{
+  color:#e60012;
+  transition: 0.4s;
+  
+}
+
+.top-button{
+  color:#434242;
+}
+
+.top-button:hover{
+  color:#e60012;
+  transition: 0.4s;
+
+}
+
+.-mr-1{
+  font-weight: bold;
+}
+
+
+
+.UnderNav {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.SecondNav{
+  padding: 2px;
+  border-bottom:1px solid #e1e1e1;
+}
+
+.menu-button:hover{
+  border: none;
+}
+
+.ThirdNav svg{
+  color: var(--first-colour);
+  margin-right: 5px;
+}
+
+.thirdnav2{
+  display: flex;
+  align-items: center;
+}
+
+.divider{
+  margin: 0 20px;
+}
+
+.UnderNav1{
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.landing {
+  display: flex;
+  position: relative;
+  background-color: #d6f0fa;
+  width: 100%;
+  height: 640px;
+  z-index: 1;
+}
+
+.gameFront {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  top: 30px;
+  background-color: #ffffff;
+  height: 660px;
+  width: 60%;
+  margin: 0 120px 20px;
+  box-shadow: 6px 8px 10px #8888881c;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+.Breadcrumb{
+  display: flex;
+  position: relative;
+}
+
+.navList{
+  display: flex;
+  margin-left: 10%;
+}
+
+
+.gameFI2{
+  display: flex;
+  margin: 0 10px;
+}
+
+
+.carouselImg{
+  height: 658px;
+  width: 708px;
+}
+
+.warning{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 12px;
+  margin: 50px 120px;
+  padding: 50px 10px;
+}
+
+
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.footer {
+  height: 800px;
+}
+
+.footerHeader {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background-color: var(--first-colour);
+  padding: 20px;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.footerMid {
+  display: flex;
+  justify-content: center;
+  height: 580px;
+  background-color: #ffffff;
+  text-align: left;
+  width: 100%;
+}
+
+
+.footer-links{
+  margin: 50px 0 50px 0;
+  padding: 0;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #202020;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.footerBottom p{
+  color: white;
+  font-size: 12px;
+  
+}
+
+.footerBottom a{
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: -70px;
+  color: white;
+}
+
+.grid ul{
+  border-right: 1px solid #ececec;
+  padding: 0 20px;
+  line-height: 1%;
+}
+
+.grid li{}
+
+
+
+
+.textOne {
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+}
+
+
+.GameDesc {
+  display: flex;
+  margin: 140px 150px 0;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.GameDesc button{
+  color: var(--first-colour);
+  font-weight: bold;
+}
+
+#plus{
+  height: 20px; 
+}
+
+.GameImg {
+  display: flex;
+  height: 314px;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
+}
+
+.GameImg img{
+  height: 314px;
+  width: 558px;
+}
+
+
+.StardewImg2 {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.rounded-xl {
+  height: 370px;
+  width: 658px;
+  margin: 30px 30px 20px 35px;
+}
+
+.sm1{
+  font-weight: bold;
+  color: #181818;
+}
+
+.gameFI {
+  display: flex;
+  margin-top: -20px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+
+.esrb{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 40px 20px;
+  gap: 15px;
+}
+
+.esrb-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: -5px;
+  gap: 15px;
+}
+
+.esrb1{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 30px;
+  height: 110px;
+  border-radius: 15px;
+  box-shadow: 6px 8px 10px #8888881c;
+}
+
+.esrb1 p{
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.esrb1 img{
+  height: 68px;
+}
+
+.esrb img{
+  height: 68px;
+}
+
+.esrbText{
+  border-bottom: 1px solid;
+  height: 50px;
+  margin-top: -10px;
+  
+}
+
+.esrb p{
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.ratingTitle{
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.deviceTitle{
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.device{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.play{
+  display: flex;
+  flex-direction: column;
+}
+
+.play p{
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+
+.support{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  
+}
+
+.devices{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #474747;
+  width: 149px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 6px 8px 10px #8888881c;
+
+}
+
+.devices img{
+  height: 40px;
+}
+
+.table-icon{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.gameFront li {
+  display: flex;
+  position: relative;
+  left: 0;
+  margin: 30px 5px 10px -12%;
+}
+
+.ProductView {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+  margin: 25px 0 0;
+}
+
+.ProductView p{
+  font-size: 12px;
+}
+
+.productView2{
+  text-underline-offset: 8px;
+  text-decoration: underline;
+  text-decoration-color: var(--first-colour);
+  text-decoration-thickness: 3px;
+
+}
+
+.ProductView h2{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.ProductButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-colour);
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 438px;
+  height: 64px;
+}
+
+.left{
+  background-color: transparent;
+  fill: #ffffff;
+}
+
+.left svg{
+  font-size: 40px;
+}
+
+.right{
+  background-color: transparent;
+  fill: #ffffff;
+}
+
+.ProductButton p{
+  font-size: 22px;
+}
+
+.ProductButton svg{
+  height: 22px;
+  margin-right: 10px;
+}
+
+.glide {
+  display: flex;
+  position: relative;
+  height: 20%;
+  width: 660px;
+  margin: -40px 35px -20px 35px;
+  overflow: hidden;
+ 
+  
+}
+
+.glide__slides {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+
+li.glide__slide{
+  height: 50px;
+  width: 107px;
+  opacity: 60%;
+  
+  
+}
+
+.glide__slide:hover{
+  opacity: 100%;
+}
+
+.glide__slide img{
+  border-radius: 15px;
+}
+
+.glide__arrow {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color:#434242;
+  opacity: 60%;
+  position: relative;
+  color: white;
+  opacity: 40%;
+  
+}
+
+.glide__arrow:hover{
+  opacity: 80%;
+  color: white;
+}
+
+.glide__arrow--prev{
+  display: flex;
+  position: absolute;
+  left:0;
+  top: 35%;
+  justify-content: center;
+  align-items: center;
+}
+
+.glide__arrow--next{
+  display: flex;
+  position: absolute;
+  right:0;
+  top: 35%;
+  justify-content: center;
+  align-items: center;
+}
+
+#next{
+  font-size: 25px;
+}
+
+#prev{
+  font-size: 25px;
+
+}
+
+.glide__arrows{
+  display: flex;
+}
+
+.glide__track{
+ display: flex;
+ overflow: hidden;
+ width: 1300px;
+ align-items: center;
+}
+
+.ratingDevice{
+  display: flex;
+  flex-direction: row;
+  margin: 70px 140px;
+  gap: 25px;
+  position: relative;
+}
+
+.table{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.rating{
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  width: 50%;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.device{
+  background-color: #efefef;
+  width: 400px;
+  width: 50%;
+}
+
+.online{
+  display: flex;
+  background-color: var(--fourth-colour);
+  width: 1200px;
+  height: 340px;
+  margin: 140px 180px;
+  border-radius: 15px;
+  justify-content: space-between;
+
+}
+
+.onlinePlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onlineSec{
+  margin: 30px 0 10px 30px;
+}
+
+.onlineSec p{
+   text-align: left;
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+#play-online{
+  font-size: 20px;
+}
+
+.onlineSec a{
+  font-weight: bold;
+  color: #e60012;
+  text-decoration: underline;
+  text-underline-offset: var(--first-colour);
+  margin-right: 10px;
+}
+
+.online1{
+
+}
+
+.online2{
+  object-fit:cover;
+  height: 340px;
+}
+
+.online button{
+  display: flex;
+  background-color: var(--first-colour);
+  color: var(--fifth-colour);
+  font-weight: bold;
+  margin: 20px 0 0;
+  border-radius: 5px;
+
+}
+
+.controller{
+  overflow: hidden;
+}
+
+table{
+  margin: 70px 150px;
+  transform: scale(1.3,1.3);
+}
+
+.table a{
+  font-weight: bold;
+  color: #e60012;
+  text-decoration: underline;
+  text-underline-offset: var(--first-colour);
+  margin-right: 10px;
+}
+
+tr{
+  border-top: 0.005px solid #a2a2a2;
+  border-bottom: .005px solid #a2a2a2;
+}
+
+
+
+.relative{
+  overflow: hidden;
+
+}
+
+.viewed{
+  margin: -20px 100px;
+}
+
+.viewed h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: #434242;
+  text-align: left;
+  margin-left: 70px;
+}
+
+
+.footerMid a{
+  color: #e60012;
+  font-weight: 600;
+}
+
+.footerMid{
+  padding: 5px;
+  
+
+}
+
+.footerLogo{
+  height: 60px;
+}
+
+.member{ 
+  font-size: 12px;
+  text-align: left;
+}
+
+
+#heart-icon{
+  color: var(--first-colour);
+  font-size: 25px;
+  
+
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+
+#goldcoin{
+  width: 25px;
+  height: 25px;
+}
+
+.goldpoints{
+  display: flex;
+  align-items: center;
+}
+
+#download-icon{
+  padding: 7px;
+}
+
+.swipe{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.swiper-wrapper{
+  display: flex;
+  margin: 10px 20px;
+  
+}
+
+.card{
+  width: 268px;
+  height: 370px;
+  border: 1px solid #cecece;
+  margin: 24px 16px;
+  border-radius: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.card img{
+  border-radius: 15px 15px 0 0;
+}
+
+.card h3{
+  font-weight: bold;
+
+}
+
+#date{
+  font-size: 12px;
+}
+
+.card-info{
+  margin: 20px;
+}
+
+.card-info1{
+  margin: 20px;
+  font-weight: bold;
+}
+
+#prev-price{
+  font-weight: lighter;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+#sale{
+  background-color: #e60012;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 3.5px 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pricing{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 8px 8px 0;
+}
+
+
+
+#tags{
+  height: 35px;
+  transform: rotate(-135deg);
+}
+
+#tag-text{
+  z-index: 2;
+  font-size: 5px;
+  transform: rotate(135deg);
+  
+}
+
+.save{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.save svg{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+
 
